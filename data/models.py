@@ -10,6 +10,7 @@ class Detail(models.Model):
     problem=models.CharField(max_length=50)
     place=models.CharField(max_length=60)
     email=models.EmailField()
+    phone_number=models.CharField(max_length=20,default="")
     appno=models.IntegerField()
     doctor=models.CharField(max_length=60)
     #this was for returning the string in database 
